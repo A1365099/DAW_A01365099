@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lab 2</title>
+</head>
+<body>
+	<h1>Laboratorio 2</h1>
+
+	<button onclick="nums()">Ejer1</button><br><br>
+	<button onclick="result()">Ejer2</button><br><br>
+	<p id="resu"></p><br><br>
+
+	<button onclick="contador()">Ejer3</button><br><br>
+	<button>Ejer4</button><br><br>
+	<button onclick="invers()">Ejer5</button><br><br>
+
+	<p id="inv"></p><br><br>
+
+	
+	<h2>Preguntas</h2>
+	<p>
+		<strong>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</strong><br>
+		<ul>
+			<li>Javascript no es compilado, es interpretado.</li>
+			<li>Javascript está basado en objetos, Java está orientado a objetos, JavaScript no utiliza clases, herencias o técnicas habituales en la OOP.</li>
+			<li>en Javascript no existe la declaración  de tipos de variables, se encarga de eso automaticamente.</li>
+		</ul>
+		<strong>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</strong><br>
+		<ul>
+			<li>getDate()</li>
+			<li>toLocalString()</li>
+			<li>getHours()</li>
+			<li>getMonth()</li>
+			<li>getDay()</li>
+		</ul>
+		<strong>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</strong><br>
+		<ul>
+			<li>length()</li>
+			<li>sort()</li>
+			<li>map()</li>
+			<li>toString()</li>
+			<li>indexOf()</li>
+		</ul>
+		<strong>¿Cómo se declara una variable con alcance local dentro de una función?</strong><br>
+		con let.<br><br>
+		<strong>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</strong><br>
+		Que puedan ser modificadas en otro lado.<br><br>
+
+		<strong>¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?</strong><br>
+		search(), peude ser usado para buscar expresiones regulares y reemplazarlo. 
+
+	</p>
+	<script type="text/javascript">
+		function nums(){
+			let numero = prompt("Escribe un numero", "Valor por defecto");
+			for (var i = 1; i <= numero; i++) {
+				document.write(i+"<br>");
+				let sqr = i * i;
+				let cube = sqr * i;
+				document.write("Cuadrado: "+sqr+"<br>");
+				document.write("Cubo: " +cube+"<br><br>");
+			}
+		}
+
+		function result(){
+			var n1 = Math.floor((Math.random() * 20) + 1);
+			var n2 = Math.floor((Math.random() * 20) + 1);
+		
+			var res = prompt("El resultado de la suma de "+n1+" y "+n2);
+
+			if (res == (n1+n2)) {
+				document.getElementById("resu").innerHTML = "resultado correcto";
+			}else{
+				document.getElementById("resu").innerHTML = "resultado incorrecto";
+			}
+		}
+
+		function contador(){
+			let numA = prompt("Esribe tus numeros: ", "Ejemplo: 1,2,0,-3").split(",");
+			let neg = 0;
+			let zeros = 0;
+			let pos = 0;
+			for (var i = 0; i < numA.length; i++) {
+				if (numA[i] < 0) {
+					neg++;
+				}else if(numA[i] == 0){
+					zeros++;
+				}else{
+					pos++;
+				}
+			}
+			document.write("numeros negativos: "+neg+"<br>");
+			document.write("numero de ceros: "+zeros+"<br>");
+			document.write("numeros positivos: "+pos+"<br>");
+		}
+
+		function proms(){
+
+		}
+
+		function invers(){
+			var n = prompt("Escribe un numero:");
+			//var n = numSwap + "";	
+			var ns = n.split("").reverse().join("");
+			document.getElementById("inv").innerHTML = ns;
+		}
+	</script>
+</body>
+</html>
