@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prob</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="lab5.css">
+</head>
+<body>
+	<h1>Problema</h1>
+
+	<ul>
+		<li><a href="Lab5.html">Main</a></li>
+		<li><a href="password.html">Passwords</a></li>
+		<li><a href="productos.html">Productos</a></li>
+	</ul><br><br>
+	<p>¡Checa si estas en tu peso ideal!</p>
+	<p>Rellena los datos</p>
+	<form onsubmit="return solucion(this)">
+		Nombre:
+		<input id="name" type="text" name="name" required>
+		Edad:
+		<input id="age" type="number" name="age" min="18" max="60" required><br>
+		Estatura:
+		<input id="est" type="number" name="estatura" min="156" max="191" required>cm<br>
+		Peso:
+		<input id="peso" type="number" name="peso" min="45" max="120"  required>kg<br>
+		
+		<input type="submit" name="submit" value="Submit">
+
+		<script type="text/javascript" src="Lab5.js"></script>
+
+	</form>
+</body>
+</html>

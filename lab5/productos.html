@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Productos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="lab5.css">
+</head>
+<body>
+	<h1>Productos</h1>
+	<ul>
+		<li><a href="Lab5.html">Main</a></li>
+		<li><a href="password.html">Passwords</a></li>
+		<li><a href="problemas.html">Problema</a></li>
+	</ul>
+	<br><br>
+	<p>Selecciona los productos a comprar<br></p>
+	<form>
+		<input id="sm" type="checkbox" name="fruta1" value="Manzana" onclick="fruta(this.id)">Manzana $16 kg 
+		<input id="sp" type="checkbox" name="fruta2" value="Platano" onclick="fruta(this.id)">Platano $12 kg 
+		<input id="sn" type="checkbox" name="fruta3" value="Naranja" onclick="fruta(this.id)">Naranja $23 kg 
+	</form><br><br>
+	<form>
+		Kilos de manzana:
+		<input id="km" type="number" name="kilosM" min="1" max="10" onclick="precio(this.id)" disabled><br>
+		Kilos de Platano:
+		<input id="kp" type="number" name="kilosP" min="1" max="10" onclick="precio(this.id)" disabled><br>
+		Kilos de Naranja:
+		<input id="kn" type="number" name="kilosN" min="1" max="10" onclick="precio(this.id)" disabled>
+	</form>
+
+	<p id="manz"></p>
+	<p id="plat"></p>
+	<p id="nar"></p>
+	<p id="total"></p><br><br>
+	<button id="compra" onclick="compra()" disabled>Comprar</button>
+	<script type="text/javascript" src="Lab5.js"></script>
+</body>
+</html>

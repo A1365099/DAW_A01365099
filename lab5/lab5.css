@@ -1,0 +1,49 @@
+body{
+	background-color: lightblue; 
+}
+h1{
+	font-family: verdana;
+	font-size: 80px;
+	color: white;
+	text-align: center;
+}
+p{
+	font-family: arial;
+	font-size: 50px;
+	color: salmon;
+	text-align: center;
+}
+
+ul{
+	background-color: pink;
+	text-align: center;
+}
+
+li{
+	font-family: arial;
+	font-size:  30px;
+	display: inline;
+	padding-right: 50px;
+}
+
+form{
+	text-align: center;
+	font-size: 30px;
+}
+
+button{
+	margin-left: 640px;
+	background-color: rgb(238, 130, 238);
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	display: inline-block;
+	font-size: 17px;
+}
+
+#conf{
+	font-size: 30px;
+	text-align: center;
+	color: red;
+
+}
