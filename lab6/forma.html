@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="lab6.css">
+</head>
+<body>
+	<h1>Forma</h1>
+<img id="logo" src="logo.png">
+	<ul class="menu">
+		<li class="menu"><a href="Lab6.html">Menú</a></li>
+		<li class="menu"><a href="Drag.html">Drag & Drop</a></li>
+	</ul>
+	<div id="forma" onmouseover="infoPop()" onmouseleave="ocultaInfo()">
+		<form class="form">
+			Nombre:
+			<input type="text" name="name" placeholder="Nombre completo"  required><br>
+			Edad: 
+			<input type="number" name="age" min="10" max="90"  required><br>
+			dirección:
+			<input type="text" name="dir" placeholder="Direccion completa" required><br><br>
+			<input type="submit" name="submit" value="Submit">
+		</form>
+	</div>
+	<p id="info" style="visibility: hidden;"> Rellena todos los campos</p>
+	<script type="text/javascript" src="lab6.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 6</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="lab6.css">
+</head>
+<body>
+	<h1>Laboratorio 6</h1>
+	<img id="logo" src="logo.png">
+	<ul class="menu">
+		<li class="menu"><a href="forma.html">Form</a></li>
+		<li class="menu"><a href="drag.html">Drag & drop</a></li>
+		
+	</ul>
+	<h2 id="titu" class="titu">Preguntas:</h2>
+	<p id="preguntas" class="preguntas" onmouseover="cambia_rojo()"  onmouseleave="cambia_color()">
+		¿Cuáles son las diferencias entre los posibles valores de la propiedad position?<br><br>
+		static: Los elementos se renderizan en orden, aparecen como están en el documento, es default.<br>
+		absolute: El elemento es posicionado relativamente al elemento anterior posicionado y que no es static.<br>
+		fixed: el elemento es posicionado relativamente al browser.<br>
+		relative: el elemento es posicionado relativamente a su posición normal.<br>
+		sticky: El elemento es posicionado basado en la posición del usuario. [1]<br><br>
+
+		¿Cuáles son los valores estándar para la propiedad visibility?<br><br>
+		visible: El elemento es visible, es por default.<br>
+		hidden: El elemento no es visible, sin embargo aún así afecta la visualización de la página<br>
+		collapse: cuando se usa en una celda de una tabla, el elemento no es visible. [2]<br><br>
+
+		¿Qué es el zIndex y para qué sirve?<br><br>
+		Especifica el orden de un elemento, un elemento con un valor más alto, estara por encima de los elementos con menor orden. [3]<br><br>
+	</p>
+	<br><br>
+	<p>Uso de setInterval (Después de un intervalo de tiempo cambia el color de las letras de los "h2")</p>
+	<button id="act" class="act select" onclick="chCol()">
+		activar
+	</button>
+	<h2 id="titu" class="titu">Referencias:</h2>
+		<ul class="refes">
+			<li>[1] https://www.w3schools.com/jsref/prop_style_position.asp</li>
+			<li>[2] https://www.w3schools.com/jsref/prop_style_visibility.asp</li>
+			<li>[3] https://www.w3schools.com/cssref/pr_pos_z-index.asp</li>
+		</ul>
+	<script type="text/javascript" src="lab6.js"></script>
+</body>
+</html>
