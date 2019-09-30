@@ -1,0 +1,53 @@
+<!DOCTYPE html >
+<html>
+      <head>
+	    <title>Lab 10</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type= "text/css" href="css/lab10.css" />
+     </head>
+     <body>
+         <h1 id="title">Laboratorio 10</h1>
+         <h2 id="subt">Vota el ganador del balón de oro<h2>
+
+	 <div id="myForm">
+        
+          
+            <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
+         
+
+          <p>Tu Nombre:
+              <input type = "text" id="name" maxlength="30" name="name">
+              <span class="error"> <?php echo $nameErr;?></span>
+          </p>
+          <p>Edad: <input type="number" name="age" min="18" max="90" >
+			<span class="error"> <?php echo $ageErr;?></span>
+          </p> 
+           
+          <p>Correo: <input type="email" name="mail" >
+			<span class="error"> <?php echo $mailErr;?></span>
+           </p> 
+          
+           <p>Candidatos Balón de oro: <input type="radio" name="jugador" value="messi">Messi
+			<input type="radio" name="jugador" value="ronaldo">C. Ronaldo
+			<input type="radio" name="jugador" value="mbappe">Mbappé
+			<input type="radio" name="jugador" value="hazard">Hazard
+			<input type="radio" name="jugador" value="neymar">Neymar
+			<input type="radio" name="jugador" value="Salah">Salah
+			<input type="radio" name="jugador" value="dijk">Van Dijk
+			<span class="error"> <?php echo $jugErr;?></span></p>
+         <input name="votar" type="submit" id="votar" value="Votar">
+         </form>
+	
+	      
+	      <div id="preg"> <?php echo $preguntas;?></div>
+	   
+	  </div>
+
+	   </footer>
+	   
+	</main>
+         
+     </body>
+</html>
+
+
