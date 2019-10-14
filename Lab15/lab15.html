@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 15</title>
+</head>
+<body>
+	<h1>Laboratorio 15</h1>
+	<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+		ID: <input type="text" name="id"><br>
+		Nombre del Cliente: <input type="text" name="name"><br>
+		Tiempos de comida: <input type="text" name="time"><br>
+		Menu contratado: <input type="text" name="menu"><br>
+		<input type="submit" name="insertar" value="insertar">
+	</form>
+
+	<p>
+		<strong>¿Por qué es una buena práctica separar el modelo del controlador?</strong><br><br>
+		<strong>¿Qué es SQL injection y cómo se puede prevenir?</strong><br><br>
+		Es una técnica maliciosa mediante la cual un intruso puede insertar comandos de SQL en el código a través de un input en una página web, con el propósito de afectar la integridad de  una base de datos.<br>
+		Usando parámetros de SQL en los inputs.<br><br>
+		<strong>¿Qué importancia tiene AJAX en el desarrollo de RIA's (Rich Internet Applications?</strong><br><br>
+		Las RIA’s son la combinación entre aplicaciones de escritorio y web. Mejoran la experiencia el usuario y la productividad de éste con interfaces más intuitivas. AJAX permite que las páginas sean más dinámicas e intuitivas permitiéndonos cubrir mejor las necesidades del cliente.<br><br>
+		<strong>¿Qué implicaciones de seguridad tiene AJAX? ¿Dónde se deben hacer las validaciones de seguridad, del lado del cliente o del lado del servidor?</strong><br><br>
+		Se debe validar por ambos lados, del lado del servidor por seguridad y del lado del cliente para que no se pierda tiempo y se notifique cuanto antes cuando falta algún campo por llenar o cuando no se está llenando en el formato indicado.<br><br>
+		<strong>¿Qué es JSON?</strong><br><br>
+		<strong>JavaScript Object Notation</strong>, es una sintaxis usada para intercambiar y almacenar datos. Es una alternativa de XML, pero es más fácil de usar. Usa la misma sintaxis que JavaScript pero es puro formato al igual que XML.
+	</p>
+</body>
+</html>

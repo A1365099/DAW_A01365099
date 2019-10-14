@@ -1,0 +1,21 @@
+<?php include("_header.html"); ?>
+
+<p id="preguntas"><strong>¿Por qué es importante hacer un session_unset() y luego un session_destroy()?</strong><br><br>
+Porque session_destroy aunque elimina el contenido y destruye la sesión, no libera las variables, por eso se usa session_unset(), para liberar las variables.<br><br>
+<strong>¿Cuál es la diferencia entre una variable de sesión y una cookie?</strong><br><br>
+LAs coookies se almacenan en la computadora y las variables de sesión en el servidor.<br><br>
+<strong>¿Qué técnicas se utilizan en sitios como facebook para que el usuario no sobreescriba sus fotos en el sistema de archivos cuando sube una foto con el mismo nombre?</strong><br><br>
+El nombre de la foto se guarda con un valor alfanumérico .<br><br>
+<strong>¿Qué es CSRF y cómo puede prevenirse?</strong><br><br>
+<strong>Cross Site Request Forgery</strong>, es un ataque que forza al usuario a ejecutar acciones no deseadas en una aplicación web.<br>
+Para prevenir este ataque se puede: 
+<li>
+	<ul>Configurar el navegador para que no recuerde usuarios y contraseñas.</ul>
+	<ul>Recordar cerrar la sesión cuando ya no se vaya a hacer uso de la aplicación y/o servicio.</ul>
+	<ul>Se recomienda no utilizar la funcionalidad de aplicaciones web que permiten mantener la sesión abierta o recordar sesión.</ul>
+	<ul>Utilizar diferentes navegadores, uno para información sensible y otro para navegación en general.</ul>
+	<ul>Utilizar complementos que bloqueen la ejecución de scripts. Así los formularios que se envíen por el metodo POST, no podrán ser enviados automáticamente sin el consentimiento del usuario.</ul>
+</li>
+</p>
+</body>
+</html>

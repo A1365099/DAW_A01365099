@@ -1,0 +1,16 @@
+	<?php include("_header.html"); ?>
+
+	<div class="contain">
+		<form method="POST" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+			<p>Usuario:</p>
+			<input type="text" name="user">
+			<span class="error"> <?php echo $nameErr;?></span><br>
+			<p>Correo:</p>
+			<input type="mail" name="mail">
+			<span class="error"> <?php echo $mailErr;?></span><br><br>                                                                                             
+			<input type="file" name="file" id="file">
+			<br><input type="submit" name="submit" value="login">
+		</form>
+	</div>
+</body>
+</html>
