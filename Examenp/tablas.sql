@@ -1,8 +1,8 @@
 
 CREATE TABLE Zombies
 (
-	ENombre varchar(20) not null,
-	PRIMARY KEY(ENombre)
+	Nombre varchar(20) not null,
+	PRIMARY KEY(Nombre)
 );
 
 
@@ -13,11 +13,11 @@ CREATE TABLE Estados
 );
 
 
-INSERT INTO Estados_2(ENombre) VALUES ('infeccion');
-INSERT INTO Estados_2(ENombre) VALUES ('desorientacion');
-INSERT INTO Estados_2(ENombre) VALUES ('violencia');
-INSERT INTO Estados_2(ENombre) VALUES ('desmayo');
-INSERT INTO Estados_2(ENombre) VALUES ('transformacion');
+INSERT INTO Estados(ENombre) VALUES ('infeccion');
+INSERT INTO Estados(ENombre) VALUES ('desorientacion');
+INSERT INTO Estados(ENombre) VALUES ('violencia');
+INSERT INTO Estados(ENombre) VALUES ('desmayo');
+INSERT INTO Estados(ENombre) VALUES ('transformacion');
 
 
 CREATE TABLE HistorialEstados
@@ -25,8 +25,8 @@ CREATE TABLE HistorialEstados
 	Nombre varchar(20) not null,
 	ENombre varchar(20) not null,
 	Fecha TimeStamp not null,
-	FOREIGN KEY(Nombre) references Zombies_2(Nombre),
-	FOREIGN KEY(ENombre) references Estados_2(ENombre)
+	FOREIGN KEY(Nombre) references Zombies(Nombre),
+	FOREIGN KEY(ENombre) references Estados(ENombre)
 );
 
 
