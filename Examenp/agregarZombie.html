@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zombies</title>
+<!--	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type"></head>
+<body>
+	  <div class="navbar-fixed">
+            <nav>
+                <div class="blue darken-1 nav-wrapper">
+                    <a href="index.php" class="brand-logo"><acronym title="Desarrollo de aplicaciones web y Bases de datos">Segundo parcial: DAW-BD</acronym></a>
+                    <ul id="nav-mobile" class="right">
+                        <li><a href="consultas.html">Consultas</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+	<h1>Agregar Zombie</h1>
+	<div>
+		<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+			Nombre:<br><input type="text" name="name" autocomplete="off" required><br>
+			Estado Actual:<br>
+			<select name="state" required>
+				<option disabled selected value> -- Elige una opcion -- </option>
+				<option value="infeccion">Infección</option>
+  				<option value="desorientacion">Desorientación</option>
+  				<option value="violencia">Violencia</option>
+  				<option value="desmayo">Desmayo</option>
+  				<option value="transformacion">Transformación</option>
+			</select><br>
+			<input type="submit" name="add" value="Agregar">
+		</form>
+	</div>
+	<script type="text/javascript" src="js/select.js"></script>
+</body>
+</html>
